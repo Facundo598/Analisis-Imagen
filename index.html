@@ -92,7 +92,7 @@
             if (currentStream) {
                 var tracks = currentStream.getTracks();
                 var facingMode = tracks[0].getSettings().facingMode;
-                var frontal = facingMode === 'environment';
+                var frontal = facingMode === 'user';
                 obtenerCamara(!frontal); // Alternar entre 'user' (frontal) y 'environment' (trasera)
             } else {
                 obtenerCamara(true); // Iniciar con la cámara frontal por defecto
